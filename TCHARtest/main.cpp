@@ -25,6 +25,6 @@ int main(int argc, const char * argv[]) {
     //and this?
     TCHAR* pointerToStr1 = str1;
 
-    std::cout << "Put breakpoint here and check values of test and pointerToTest\n";
+    std::cout << "Put breakpoint here and check values of str1, str2 and pointerToStr1\n";
     return 0;
 }
