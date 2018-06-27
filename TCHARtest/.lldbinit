@@ -1,0 +1,5 @@
+command script import ~/lldb/tcharsumary.py
+type summary add -F tcharsumary.tchar_SummaryProvider "TCHAR *"
+type summary add -F tcharsumary.tchar_SummaryProvider "TCHAR []"
+type summary add Library::CString --summary-string "${var.m_pchData}"
+type summary add CString --summary-string "${var.m_pchData}"

@@ -28,3 +28,16 @@ int main(int argc, const char * argv[]) {
     std::cout << "Put breakpoint here and check values of str1, str2 and pointerToStr1\n";
     return 0;
 }
+
+//Solution: custom Python script for LLDB
+//crete dir: ~/lldb and put there tcharsumary.py, included in this repo
+//in path ~/.lldbinit
+//with content
+//command script import ~/lldb/tcharsumary.py
+//type summary add -F tcharsumary.tchar_SummaryProvider "TCHAR *"
+//type summary add -F tcharsumary.tchar_SummaryProvider "TCHAR []"
+//type summary add Library::CString --summary-string "${var.m_pchData}"
+//type summary add CString --summary-string "${var.m_pchData}"
+
+//DONE
+
